@@ -1,0 +1,240 @@
+.carrosel-grande{
+    height: 495px;
+    width: 877px;
+    position: relative;
+    overflow: hidden;
+}
+.carrosel-grande img{
+object-fit: cover;
+object-position: center;
+max-width: 877px;
+}
+.carrosel-grande .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Mostrar o overlay quando o mouse estiver sobre o carrosel */
+  .carrosel-grande:hover .overlay {
+    opacity: 1; /* Mostrar o overlay */
+  }
+
+.carrosel-container {
+    display: flex;
+}
+
+/*Overlay*/
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(farthest-corner at 50% 50%, #00000000, #000);
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Ocultar o overlay por padrão */
+    transition: opacity 0.4s; /* Efeito de transição */
+    z-index: 10; /* Garante que o overlay esteja acima do conteúdo do slide */  
+  }
+
+.carrosel-pqn1, .carrosel-pqn2 {
+    flex: 1;
+    display: flex; /* Usado para centrar o conteúdo */
+}
+.carrosel-pqn1 {
+    overflow: hidden; /* Oculta partes da imagem que saem do contêiner */
+    position: relative;
+    width: 100%; /* Largura do carrosel */
+    height: 100vh; /* Altura do carrosel */
+    margin: 0 auto; /* Centralizar o carrosel */
+    border-left: 2px solid  #737373;
+}
+.carrosel-pqn1 img {
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.carrosel-pqn1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Mostrar o overlay quando o mouse estiver sobre o carrosel */
+  .carrosel-pqn1:hover .overlay {
+    opacity: 1; /* Mostrar o overlay */
+  }
+
+.carrosel-pqn2 {
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Largura do carrosel */
+    height: 100vh; /* Altura do carrosel */
+    max-height: 600px; /* Altura máxima do carrosel */
+    margin: 0 auto; /* Centralizar o carrosel */
+    border-top: 2px solid #737373;
+    border-left: 2px solid  #737373;
+}
+
+.carrosel-pqn2 img {
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+    max-width:  439px; /* Garante que a imagem não ultrapasse a largura do contêiner */
+}
+
+
+  /* Adicionar o overlay ao carrosel */
+  .carrosel-pqn2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Mostrar o overlay quando o mouse estiver sobre o carrosel */
+  .carrosel-pqn2:hover .overlay {
+    opacity: 1; /* Mostrar o overlay */
+  }
+
+.carrosel-small {
+    overflow: hidden; /* Oculta partes do conteúdo que saem do contêiner */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 439px; /* Define a largura máxima */
+}
+
+.carrosel-small .texto-over{
+    position: absolute; /* position the text relative to the overlay */
+    bottom: 0; /* align the text to the bottom of the overlay */
+    left: 0; /* align the text to the left of the overlay */
+    margin: 20px;
+    font-size: 20px;
+}
+.carrosel-grande .texto-over{
+    position: absolute; /* position the text relative to the overlay */
+    bottom: 0; /* align the text to the bottom of the overlay */
+    left: 0; /* align the text to the left of the overlay */
+    margin: 40px;
+    font-size: 30px;
+}
+.texto-over img{
+    width: 20px;
+    
+}
+.texto-over p{
+    font-weight: bold;
+}
+.buttons-overlay .Botão-desconto{
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #0FB1F4;
+    border: #007BAE 1px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.buttons-overlay .Botão-compra{
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+#vlt-btn, #vai-btn{
+width: 30px;
+height: 40px;
+border: none;
+background-color: transparent;
+cursor: pointer;
+
+}
+#vlt-btn img, #vai-btn img{
+    width: 100%;
+    height: 100%;
+
+}
+.carrosel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 5;
+}
+.carrosel-1  {
+    border: #737373 solid;
+    display: flex;
+    width: 1316px;
+    height: 495px;
+    max-width: 1316px;
+    opacity: 0;
+    transition: opacity .7s;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+.carrosel-2 {
+    border: #737373 solid;
+    display: flex;
+    width: 1316px;
+    height: 495px;
+    max-width: 1316px;
+    position: absolute;
+    transition: opacity .7s;
+    opacity: 0;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+.carrosel-3 {
+    border: #737373 solid;
+    display: flex;
+    width: 1316px;
+    height: 495px;
+    max-width: 1316px;
+    position: absolute;
+    transition: opacity .7s;
+    opacity: 0;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 1);
+}
+.on{
+ opacity: 1;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    z-index: 10;
+  }
+  .carousel-nav input[type="radio"] {
+    display: none;
+  }
+  .carousel-nav label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 7px;
+    transition: .7s;
+    border: #ccc solid 1px;
+  }
+  .carousel-nav label:hover {
+    background-color: #0FB1F4;
+    border: none;
+    width: 12px;
+    height: 12px;
+  }
+  .carousel-nav input[type="radio"]:checked + label {
+    background-color: #0FB1F4;
+    border: none;
+    width: 12px;
+    height: 12px;
+  }

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsplashKeys</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'jogos/styles/pageprincipal/style.css' %}">
+    <link rel="stylesheet" href="{% static 'jogos/styles/pageprincipal/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'jogos/Styles/pageprincipal/carrosel.css' %}">
+    <link rel="stylesheet" href="{% static 'jogos/Styles/pageprincipal/jg-container.css' %}">
+    <link rel="icon" href="{% static 'jogos/img/SIteicon.png' %}" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="navbar">
+            <a href="" class="logo">
+                <img src="static/jogos/img/Ativo 1.svg" alt="">
+                ISPLASH<span class="cor">KEYS</span>
+            </a>
+            <div class="opcao">
+                <a href="">
+                    <img src="static/jogos/img/Controle.png" style="width: 20px; height: 13px;">
+                    Console
+                </a>
+                <a href="">
+                    <img src="static/jogos/img/Pc.png" style="width: 20px; height: 15px;">
+                    PC
+                </a>
+                <a href="">
+                    <img src="static/jogos/img/Celular.png" style="width: 13px; height: 15px;">
+                    Mobile</a>
+                <a href="">
+                    <img src="static/jogos/img/estrela.png" style="width: 20px; height: 20px;">
+                    Destaques</a>
+            </div>
+            <input type="text" placeholder="Buscar">
+            <div class="carrinho">
+                <a href="">
+                    <img src="static/jogos/img/carrinho.png">
+                </a>
+            </div>
+            <div class="coracao">
+                <a href="">
+                    <img src="static/jogos/img/coração.png">
+                </a>
+            </div>
+            <div class="perfil">
+                <a href="cadastro/cadastro.html">
+                    <img src="static/jogos/img/pessoainha.png">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--CONTEUDO PAG-->
+    <div class="content">
+
+        <!--CARROSEL-->
+        <div class="carrosel-container">
+            <button id="vlt-btn">
+                <img src="static/jogos/img/Volta.png" alt="vlt-btn">
+            </button>
+            <div class="carrosel carrosel-1 on ">
+                <div class="carrosel-grande">
+                    <a href="">
+                        <img src="static/jogos/img/thelast.avif" alt="" class="slider">
+                        <div class="overlay">
+                            <div class="texto-over">
+                                <p>The Last of Us</p>
+                                <img src="static/jogos/img/steam white.png" alt="">
+                                <img src="static/jogos/img/Play Logo White.png" alt=""
+                                    style="padding-left: 5px; width: 25px;">
+                                <div class="buttons-overlay">
+                                    <button class="Botão-desconto">-20%</button><button
+                                        class="Botão-compra">R$120,00</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrosel-small">
+                    <div class="carrosel-pqn1">
+                        <a href="">
+                            <img src="static/jogos/img/god ofi wari.avif" alt="" class="slider">
+                            <div class="overlay">
+                                <div class="texto-over">
+                                    <p>Pré-Venda</p>
+                                    <img src="static/jogos/img/steam white.png" alt="">
+                                    <div class="buttons-overlay">
+                                        <button class="Botão-desconto">-20%</button><button
+                                            class="Botão-compra">R$120,00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carrosel-pqn2">
+                        <a href="">
+                            <img src="static/jogos/img/pantarma.avif" alt="" class="slider">
+                            <div class="overlay">
+                                <div class="texto-over">
+                                    <p>Ghost Of Tsushima</p>
+                                    <img src="static/jogos/img/steam white.png" alt=""><img
+                                        src="static/jogos/img/Play Logo White.png" alt=""
+                                        style="padding-left: 10px; width: 25px;">
+                                    <div class="buttons-overlay">
+                                        <button class="Botão-desconto">-20%</button><button
+                                            class="Botão-compra">R$120,00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carrosel carrosel-2">
+                <div class="carrosel-grande">
+                    <a href="">
+                        <img src="static/jogos/img/macaco.png" alt="" class="slider">
+                        <div class="overlay">
+                            <div class="texto-over">
+                                <p>Black Myth Wukong</p>
+                                <img src="static/jogos/img/steam white.png" alt="">
+                                <img src="static/jogos/img/Play Logo White.png" alt="" style="padding-left: 5px;">
+                                <img src="static/jogos/img/xbox.png" alt=" padding-left: 5px;">
+                                <div class="buttons-overlay">
+                                    <button class="Botão-desconto">-20%</button><button
+                                        class="Botão-compra">R$120,00</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrosel-small">
+                    <div class="carrosel-pqn1">
+                        <a href="">
+                            <img src="static/jogos/img/KIngdom.jpg" alt="" class="slider">
+                            <div class="overlay">
+                                <div class="texto-over">
+                                    <p>Pré-Venda</p>
+                                    <img src="static/jogos/img/steam white.png" alt="">
+                                    <img src="static/jogos/img/Play Logo White.png" alt="" style="padding-left: 5px;">
+                                    <img src="static/jogos/img/xbox.png" alt=" padding-left: 5px;">
+                                    <div class="buttons-overlay">
+                                        <button class="Botão-desconto">-20%</button><button
+                                            class="Botão-compra">R$120,00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carrosel-pqn2">
+                        <a href="">
+                            <img src="static/jogos/img/formulinha.png" alt="" class="slider">
+                            <div class="overlay">
+                                <div class="texto-over">
+                                    <p>F1 24</p>
+                                    <img src="static/jogos/img/steam white.png" alt=""><img
+                                        src="static/jogos/img/Play Logo White.png" alt="" style="padding-left: 5px;">
+                                    <img src="static/jogos/img/xbox.png" alt=" padding-left: 5px;">
+                                    <div class="buttons-overlay">
+                                        <button class="Botão-desconto">-20%</button><button
+                                            class="Botão-compra">R$120,00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carrosel carrosel-3">
+                <div class="carrosel-grande">
+                    <a href="">
+                        <img src="static/jogos/img/ocowboyvaitepegar.webp" alt="" class="slider">
+                        <div class="overlay">
+                            <div class="texto-over">
+                                <p>Red Dead Redemption II</p>
+                                <img src="static/jogos/img/steam white.png" alt="">
+                                <img src="static/jogos/img/Play Logo White.png" alt="" style="padding-left: 5px;">
+                                <img src="static/jogos/img/xbox.png" alt=" padding-left: 5px;">
+                                <div class="buttons-overlay">
+                                    <button class="Botão-desconto">-20%</button><button
+                                        class="Botão-compra">R$120,00</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrosel-small">
+                    <div class="carrosel-pqn1">
+                        <a href="">
+                            <img src="static/jogos/img/sombra.png" alt="" class="slider">
+                            <div class="overlay">
+                                <div class="texto-over">
+                                    <p>Pré-Venda</p>
+                                    <img src="static/jogos/img/steam white.png" alt="">
+                                    <img src="static/jogos/img/Play Logo White.png" alt="" style="padding-left: 5px;">
+                                    <img src="static/jogos/img/xbox.png" alt=" padding-left: 5px;">
+                                    <div class="buttons-overlay">
+                                        <button class="Botão-desconto">-20%</button><button
+                                            class="Botão-compra">R$120,00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carrosel-pqn2">
+                        <a href="">
+                            <img src="static/jogos/img/oiaocapeta.jpg" alt="" class="slider">
+                            <div class="overlay">
+                                <div class="texto-over">
+                                    <p>DIABLO IV</p>
+                                    <img src="static/jogos/img/steam white.png" alt=""><img
+                                        src="static/jogos/img/Play Logo White.png" alt="" style="padding-left: 5px;">
+                                    <img src="static/jogos/img/xbox.png" alt=" padding-left: 5px;">
+                                    <div class="buttons-overlay">
+                                        <button class="Botão-desconto">-20%</button><button
+                                            class="Botão-compra">R$120,00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button id="vai-btn"><img src="static/jogos/img/Vai.png" alt="vai-btn"></button>
+        </div>
+        <div class="carousel-nav">
+            <input type="radio" name="carousel-nav" id="nav-1">
+            <label for="nav-1"></label>
+            <input type="radio" name="carousel-nav" id="nav-2">
+            <label for="nav-2"></label>
+            <input type="radio" name="carousel-nav" id="nav-3">
+            <label for="nav-3"></label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="promocao1">
+            <p>Ultimos Jogos Adicionados</p>
+            <button>VER MAIS</button>
+            
+            <div class="jogoscontainer1">
+                {% for jogo in jogos_recente %}
+     
+                <div class="container-jg">
+
+                    <img src='{{jogo.img.url}}' alt="img-jogo" class="img-jogo">
+                    <div class="info-jg">
+                        <p>{{jogo.nome}}</p>
+                        <div class="descricao-jg">
+                            <p>{{jogo.descricao}}</p>
+                        </div>
+                        <div class="icons-jg">
+                            <img src="static/jogos/img/steam white.png" alt="" srcset="">
+                            <img src="static/jogos/img/Play Logo White.png" alt="">
+                            <img src="static/jogos/img/xbox.png" alt="">
+                        </div>
+                        <div class="button-jg">
+                            <button class="Botão-desconto">-20%</button>
+                            <button class="Botão-compra" onclick="window.location.href='{% url 'promocao1' jogo.id %}'">R${{jogo.preco}}</button>
+                        </div>
+                    </div>
+
+                </div>
+                {% endfor %}
+    </div>          
+
+
+</body>
+<script src="{% static 'jogos/scripts/script.js' %}"></script>
+
+</html>

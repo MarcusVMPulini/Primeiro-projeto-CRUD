@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(background.webp) center no-repeat;
+    filter: blur(3px);
+    background-size: cover;
+    opacity: 0.2;
+
+}
+
+.content {
+    margin-top: 10vh; /* Espaço para a navbar */
+    padding: 20px;
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Permite que o conteúdo cresça verticalmente */
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo no início */
+}
+
+.container {
+    background-color:transparent;
+    height: 2000px; /* Ajuste o padding conforme necessário */
+    border-radius: 8px;
+    width: 1232px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 100%; /* Garante que o container não ultrapasse o tamanho da tela */
+    margin: 100px auto; /* Alinha horizontalmente ao centro e adiciona margem superior e inferior */
+    position: relative;
+    top: 50%; /* Move o container para baixo para o centro verticalmente */
+}
+
+.Botão-compra{
+    background-color: #404040;
+    width: 152px;
+    height: 37px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: #2F2E2E 2px solid;
+}
+.Botão-compra:hover{
+    background-color: #0FB1F4;
+    border: #007BAE 2px solid;
+}
+.Botão-desconto{
+    background-color: #0FB1F4;
+    border: #007BAE 2px solid;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}

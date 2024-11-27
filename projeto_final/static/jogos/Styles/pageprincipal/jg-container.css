@@ -1,0 +1,98 @@
+.promocao1 > p{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+}
+.promocao1 > button{
+    display: inline-block;
+    margin-left: 1111px;
+    background-color: #0FB1F4;
+    border-radius: 5px;
+    border: #007BAE 2px solid;
+    width: 117px;
+    height: 32px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.jogoscontainer1{
+    display: flex; /* Itens na horizontal */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Mudou de center para flex-start */
+    flex-direction: row;
+    margin-top: 10px;
+}
+.container-jg{
+    background-color: black;
+    width: 236px;
+    height: 310px;
+    border-radius: 10px;
+    margin: 0;
+}
+.jogoscontainer1 .container-jg:not(:first-child) {
+    margin-left: 96px;
+}
+.jogoscontainer1 .container-jg:nth-child(4n+1) {
+    margin-left: 0;
+  }
+.icons-jg img{
+    width: 18px;
+    margin-bottom: 10px;
+}
+
+.info-jg{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: -5px;
+}
+.container-jg  .img-jogo{
+    width: 236px;
+    height: 132px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.info-jg > p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 33px;
+    white-space: nowrap; /* não quebra a linha */
+    overflow: hidden; /* esconde o texto que ultrapassa a largura */
+    text-overflow: ellipsis; /* adiciona reticências no final */
+
+}
+.descricao-jg > p {
+    font-family: inter;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 40px; /* ajuste essa altura para o tamanho de duas linhas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.button-jg .Botão-compra{
+    width: 152px;
+    height: 37px;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.button-jg .Botão-desconto{
+    width: 57px;
+    height: 37px;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.info-jg{
+    margin-left: 8px;
+}
+.clearfix {
+    clear: both; /* Garante que a próxima linha comece abaixo */
+}
+

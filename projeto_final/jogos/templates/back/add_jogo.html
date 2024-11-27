@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.12/dist/css/uikit.min.css" />
+</head>
+<body>
+    <center>
+        <legend class="uk-legend" style="font-weight: bold; margin-top: 40px">Cadastrar Jogo</legend>
+    <form class="uk-form-horizontal uk-margin-large" method="POST" action="{% url 'add_jogo' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-text" style="margin-left: 400px; margin-top: 20px">Nome</label>
+            <div class="uk-margin">
+                <input class="uk-input" type="text" name="nome" placeholder="Nome do Jogo" aria-label="Input" style="width: 800px; margin-left: -500px;">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-select" style="margin-left: 400px;">Desenvolvedor</label>
+            <div class="uk-margin">
+                <input class="uk-input" type="text" name="desenvolvedor" placeholder="Desenvolvedor do Jogo" aria-label="Input" style="width: 800px; margin-left: -500px;">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <div class="uk-form-label" style="margin-left: 400px;">Preço</div>
+            <div class="uk-margin">
+                <input class="uk-input" type="text" name="preco" placeholder="Preço do Jogo" aria-label="Input" style="width: 200px; margin-left: -1100px;">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <div class="uk-form-label" style="margin-left: 400px;">Plataformas</div>
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid" style="margin-left: 100px;">
+                <label><input class="uk-checkbox" type="checkbox"  name="plataformas" value="Steam" > Steam</label>
+                <label><input class="uk-checkbox" type="checkbox"  name="plataformas" value="PlayStation" > PlayStation</label>
+                <label><input class="uk-checkbox" type="checkbox"  name="plataformas" value="Xbox" > XBox</label>
+                <label><input class="uk-checkbox" type="checkbox"  name="plataformas" value="Switch" > Switch</label>
+            </div>
+        </div>
+
+        <div class="uk-margin">
+            <div class="uk-form-label" style="margin-left: 400px;">Descrição</div>
+            <div class="uk-margin">
+                <textarea class="uk-textarea" name="descricao" rows="5" placeholder="Descrição do jogo" aria-label="Textarea" style="width: 800px; margin-left: -500px;"></textarea>
+            </div>
+        </div>
+
+        <div class="uk-margin">
+            <div class="uk-form-label" style="margin-left: 400px;">Requisitos</div>
+            <div class="uk-margin">
+                <textarea class="uk-textarea" rows="5" name="requisitos" placeholder="Requisitos para o Jogo" aria-label="Textarea" style="width: 800px; margin-left: -500px;"></textarea>
+            </div>
+        </div>
+
+        <div class="uk-margin">
+            <div class="uk-form-label" style="margin-left: 400px;">Idiomas</div>
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid" style="margin-left: 100px;">
+                <label><input class="uk-checkbox" type="checkbox"  name="idiomas" value="Ingles"> Ingles</label>
+                <label><input class="uk-checkbox" type="checkbox" name="idiomas" value="Português"> Português</label>
+                <label><input class="uk-checkbox" type="checkbox" name="idiomas" value="Mandarim"> Mandarim</label>
+                <label><input class="uk-checkbox" type="checkbox" name="idiomas" value="Alemão"> Alemão</label>
+                <label><input class="uk-checkbox" type="checkbox" name="idiomas" value="Espanhol"> Espanhol</label>
+            </div>
+        </div>
+
+        <div class="uk-margin">
+            <div class="uk-form-label" style="margin-left: 400px; ">Generos</div>
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid" style="margin-left: 100px;">
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="FPS"> FPS</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="MOBA"> MOBA</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="RPG"> RPG</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="Battle Royale"> Battle Royale</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="FPA"> FPA</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="PVP"> PVP</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="RTS"> RTS</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="MMORPG"> MMORPG</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="PUZZLE"> PUZZLE</label>
+                <label><input class="uk-checkbox" type="checkbox" name="generos" value="Party Games"> Party Games</label>
+            </div>
+        </div>
+            
+        <div class="uk-margin">
+            IMAGE
+            <div uk-form-custom>
+                <input type="file" name="img" aria-label="Custom controls">
+            </div>
+        </div>
+        <div class="uk-margin">
+            background
+            <div uk-form-custom>
+                <input type="file" name="background" aria-label="Custom controls">
+            </div>
+        </div>
+        <p uk-margin>
+            <button class="uk-button uk-button-default", type="submit">ENVIAR</button>
+        </p>
+    </form>
+    </center>
+</body>
+</html>
+

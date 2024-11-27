@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsplashKeys</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'jogos/styles/pagejogos/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'jogos/styles/pagejogos/sla.css' %}">
+    <link rel="stylesheet" href="{% static 'jogos/styles/pagejogos/jogovenda.css' %}">
+    <link rel="icon" href="{% static 'jogos/img/SIteicon.png' %}" type="image/x-icon">
+</head>
+
+<!-- jogo.html -->
+
+<body>
+    <div class="background-image" style="background-image: url('{{ jogos.background.url }}');">
+    </div>
+    <!--NAVBAR-->
+    <nav>
+        <div class="navbar">
+            <a href="" class="logo">
+                <img src="{% static 'jogos/img/Ativo 1.svg' %}" alt="">
+                ISPLASH<span class="cor">KEYS</span>
+            </a>
+            <div class="opcao">
+                <a href="">
+                    <img src="{% static 'jogos/img/Controle.png' %}" style="width: 20px; height: 13px;">
+                    Console
+                </a>
+                <a href="">
+                    <img src="{% static 'jogos/img/Pc.png' %}" style="width: 20px; height: 15px;">
+                    PC
+                </a>
+                <a href="">
+                    <img src="{% static 'jogos/img/Celular.png' %}" style="width: 13px; height: 15px;">
+                    Mobile</a>
+                <a href="">
+                    <img src="{% static 'jogos/img/estrela.png' %}" style="width: 20px; height: 20px;">
+                    Destaques</a>
+            </div>
+            <input type="text" placeholder="Buscar">
+            <div class="carrinho">
+                <a href="">
+                    <img src="{% static 'jogos/img/carrinho.png' %}">
+                </a>
+            </div>
+            <div class="coracao">
+                <a href="">
+                    <img src="{% static 'jogos/img/coração.png' %}">
+                </a>
+            </div>
+            <div class="perfil">
+                <a href="cadastro/cadastro.html">
+                    <img src="{% static 'jogos/img/pessoainha.png' %}">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="miniimage">
+                <img src="{{jogos.img.url}}" alt="">
+                <p>{{jogos.nome}}</p>
+            </div>
+            <div class="video">
+                <div class="img-showcase">
+                    <iframe width="679px" height="376px" src="//www.youtube.com/embed/KfjG9ZLGBHE" frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                    <img src="{% static 'jogos/img/darkimg1.jpg' %}" alt="showcase">
+                    <img src="{% static 'jogos/img/darkimg2.jpg' %}" alt="showcase">
+                    <img src="{% static 'jogos/img/darkimg3.jpg' %}" alt="showcase">
+                </div>
+            </div>
+            <div class="img-select">
+                <div class="img-item">
+                    <a href="#" data-id="1">
+                        <iframe width="679px" height="376px" src="//www.youtube.com/embed/KfjG9ZLGBHE" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <div class="img-item">
+                            <a href="#" data-id="2">
+                                <img src="{% static 'jogos/img/darkimg1.jpg' %}" alt="showcase">
+                            </a>
+                        </div>
+                        <div class="img-item">
+                            <a href="#" data-id="3">
+                                <img src="{% static 'jogos/img/darkimg2.jpg' %}" alt="showcase">
+                            </a>
+                        </div>
+                        <div class="img-item">
+                            <a href="#" data-id="4">
+                                <img src="{% static 'jogos/img/darkimg3.jpg' %}" alt="showcase">
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <!--card direito-->
+            <div class = "product-content">
+
+                <div class="informaçoes">
+                         
+                        <p>{{jogos.nomes}}</p>
+                    </div>
+                <button class="Botão-desconto">-55%</button>
+                <p>R${{jogos.preco}}</p>
+                <p id="preco-com-desconto"></p>
+                <div class="Buttons-card">
+                    
+                    <button class="Botão-compra">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+  let precoJogo = {{ jogos.preco }};
+  let desconto = 0.55;
+
+  let precoComDesconto = precoJogo - (precoJogo * desconto);
+
+  document.getElementById("preco-com-desconto").innerHTML = "R$" + precoComDesconto.toFixed(2); // exibe o preço com desconto com 2 casas decimais
+    </script>
+</html>

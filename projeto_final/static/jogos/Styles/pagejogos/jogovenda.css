@@ -1,0 +1,52 @@
+.miniimage img{
+    width: 236px;
+    height: 141px;
+    border-radius: 5px;
+}
+.miniimage{
+    display: flex;
+}
+.miniimage p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 19px;
+
+}
+.video{
+    margin-top: 48px;
+    overflow: hidden;
+    width: 679px;
+    height: 376px;
+    
+}
+
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase iframe{
+    min-width: 100%;
+    min-height: 377px;
+    display: block;
+}
+.img-showcase img{
+    width: 100%;
+    display: block;
+}
+.img-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.img-item img, iframe{
+    width: 162px; /* ou outro valor que você desejar */
+    height: 96px;
+    margin: 5px; /* adicione um pouco de margem para separar as imagens */
+}
+
+.img-item:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,106 @@
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    border-bottom: solid #0AB8D6 2px;
+    width: 100%; /* Ajuste a largura para 100% */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0; /* Garante que a navbar fique no topo da página */
+    z-index: 1000;
+}
+
+/*logo fudida que não fica certa*/
+.navbar .logo img {
+    height: 40px;
+    cursor: pointer;
+    margin-left: 180px;
+}
+.navbar .logo{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    font-size: 30px;
+    
+}
+.cor{
+ 
+ color: #0AB8D6;
+}
+/*fim da parte da logo*/
+
+.navbar .opcao a{
+ text-decoration: none;
+ color: white;
+ font-weight: bold;
+ font-size: 20px;
+ margin-left: 83px;
+}
+.navbar .opcao a:hover{
+    color: #0AB8D6;
+    transition: .4s;
+}
+
+
+.navbar input {
+    background-color: #C1C1C1;
+    border: transparent;
+    border-radius: 14px;
+    width: 127px;
+    display: block;
+    height: 23px;
+    margin-left: 83px;
+    color: white;
+    padding-left: 5px;
+}
+
+.navbar input::placeholder{
+  text-align: center;
+}
+
+.carrinho{
+    background-color: rgb(255, 255, 255, 0.10);
+    margin-left: 50px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+
+}
+.carrinho img{
+    width: 20px;
+}
+.coracao{
+    background-color: rgb(255, 255, 255, 0.10);
+    margin-left: 50px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+
+}
+.coracao img{
+    width: 21px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    margin-left: 50px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #0AB8D6 solid 1px;
+
+}
+.perfil img{
+    width: 20px;
+}
